@@ -125,20 +125,20 @@ public extension StyleObject where Base: NSMutableAttributedString {
         return self
     }
 
-    @discardableResult func match(_ match: NSRange, handler: ((NSAttributedString) -> Void)) -> StyleObject {
+    @discardableResult func match(_ match: NSRange, builder: ((NSAttributedString) -> Void)) -> StyleObject {
         let matched = NSAttributedString(attributedString: base.attributedSubstring(from: match))
 
-        handler(matched)
+        builder(matched)
 
-        var resultRange: NSRange = NSMakeRange(0, 0)
+        var resultRange: NSRange = NSMakeRange(match.location, 0)
         let pointer = NSRangePointer(mutating: &resultRange)
-        base.addAttributes(matched.attributes(at: 0, effectiveRange: pointer), range: match)
+        base.addAttributes(matched.attributes(at: match.location, effectiveRange: pointer), range: match)
         return self
     }
 
-    @discardableResult func match(_ text: String, handler: ((NSAttributedString) -> Void)) -> StyleObject {
+    @discardableResult func match(_ text: String, builder: ((NSAttributedString) -> Void)) -> StyleObject {
         let range = base.mutableString.range(of: text)
-        return match(range, handler: handler)
+        return match(range, builder: builder)
     }
 
     func render() -> NSAttributedString {

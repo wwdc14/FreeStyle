@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     var fs: StyleObject<NSMutableAttributedString> {
         return StyleObject<NSMutableAttributedString>(NSMutableAttributedString(string: self))
     }

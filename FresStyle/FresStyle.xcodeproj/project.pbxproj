@@ -16,6 +16,12 @@
 		65211341222AA67200AC2A80 /* FreeStyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65211340222AA67200AC2A80 /* FreeStyleProtocol.swift */; };
 		65211344222AB62800AC2A80 /* String+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65211343222AB62800AC2A80 /* String+freeStyle.swift */; };
 		65211347222AB6C200AC2A80 /* NSMutableAttributedString+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65211346222AB6C200AC2A80 /* NSMutableAttributedString+freeStyle.swift */; };
+		65C9EA1022395A1D0065BCB8 /* UIView+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9EA0F22395A1D0065BCB8 /* UIView+freeStyle.swift */; };
+		65C9EA12223969AF0065BCB8 /* UIButton+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9EA11223969AF0065BCB8 /* UIButton+freeStyle.swift */; };
+		65C9EA1422396A2A0065BCB8 /* UIImageView+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9EA1322396A2A0065BCB8 /* UIImageView+freeStyle.swift */; };
+		65C9EA1622396A610065BCB8 /* UILabel+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9EA1522396A610065BCB8 /* UILabel+freeStyle.swift */; };
+		65C9EA1822396AEB0065BCB8 /* CALayer+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9EA1722396AEB0065BCB8 /* CALayer+freeStyle.swift */; };
+		65C9EA1A22396B8B0065BCB8 /* UIStackView+freeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C9EA1922396B8B0065BCB8 /* UIStackView+freeStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,12 @@
 		65211340222AA67200AC2A80 /* FreeStyleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStyleProtocol.swift; sourceTree = "<group>"; };
 		65211343222AB62800AC2A80 /* String+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+freeStyle.swift"; sourceTree = "<group>"; };
 		65211346222AB6C200AC2A80 /* NSMutableAttributedString+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+freeStyle.swift"; sourceTree = "<group>"; };
+		65C9EA0F22395A1D0065BCB8 /* UIView+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+freeStyle.swift"; sourceTree = "<group>"; };
+		65C9EA11223969AF0065BCB8 /* UIButton+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+freeStyle.swift"; sourceTree = "<group>"; };
+		65C9EA1322396A2A0065BCB8 /* UIImageView+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+freeStyle.swift"; sourceTree = "<group>"; };
+		65C9EA1522396A610065BCB8 /* UILabel+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+freeStyle.swift"; sourceTree = "<group>"; };
+		65C9EA1722396AEB0065BCB8 /* CALayer+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+freeStyle.swift"; sourceTree = "<group>"; };
+		65C9EA1922396B8B0065BCB8 /* UIStackView+freeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+freeStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +118,8 @@
 		6521133F222A692400AC2A80 /* FreeStyle */ = {
 			isa = PBXGroup;
 			children = (
-				65211345222AB6AF00AC2A80 /* Style */,
 				65211340222AA67200AC2A80 /* FreeStyleProtocol.swift */,
+				65211345222AB6AF00AC2A80 /* Style */,
 				65211342222AB0AE00AC2A80 /* Category */,
 			);
 			path = FreeStyle;
@@ -125,6 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				65211346222AB6C200AC2A80 /* NSMutableAttributedString+freeStyle.swift */,
+				65C9EA0F22395A1D0065BCB8 /* UIView+freeStyle.swift */,
+				65C9EA1922396B8B0065BCB8 /* UIStackView+freeStyle.swift */,
+				65C9EA11223969AF0065BCB8 /* UIButton+freeStyle.swift */,
+				65C9EA1322396A2A0065BCB8 /* UIImageView+freeStyle.swift */,
+				65C9EA1522396A610065BCB8 /* UILabel+freeStyle.swift */,
+				65C9EA1722396AEB0065BCB8 /* CALayer+freeStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -230,10 +248,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C9EA1422396A2A0065BCB8 /* UIImageView+freeStyle.swift in Sources */,
+				65C9EA1022395A1D0065BCB8 /* UIView+freeStyle.swift in Sources */,
 				65211322222A691A00AC2A80 /* ViewController.swift in Sources */,
+				65C9EA1A22396B8B0065BCB8 /* UIStackView+freeStyle.swift in Sources */,
+				65C9EA1822396AEB0065BCB8 /* CALayer+freeStyle.swift in Sources */,
 				65211320222A691A00AC2A80 /* AppDelegate.swift in Sources */,
 				65211344222AB62800AC2A80 /* String+freeStyle.swift in Sources */,
 				65211341222AA67200AC2A80 /* FreeStyleProtocol.swift in Sources */,
+				65C9EA12223969AF0065BCB8 /* UIButton+freeStyle.swift in Sources */,
+				65C9EA1622396A610065BCB8 /* UILabel+freeStyle.swift in Sources */,
 				65211347222AB6C200AC2A80 /* NSMutableAttributedString+freeStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
